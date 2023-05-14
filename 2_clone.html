@@ -5,8 +5,14 @@
     <title>Web-1 CSS</title>
     <meta charset="utf-8">
     <style>
-        body{
-            margin: 0;
+        *{
+            margin:0;
+            padding:0;
+        }
+        body::before, body::after{
+            content:'';
+            display:block;
+            clear:both;
         }
         #active{
             color:red;
@@ -31,6 +37,11 @@
             width: 100px;
             margin: 0;
             padding: 20px;
+            float:left;
+            height:calc(100vh - 200px);
+        }
+        h2, p{
+            padding-left:160px;
         }
     </style>
 </head>
